@@ -3,11 +3,7 @@
 // является ли оно палиндромом.
 // 14212 -> нет
 // 12821 -> да
-//  -> да
 
-// ввести число
-// задать палиндром
-// вывести 
 
 Console.Write("Введите число: ");
 string number = Console.ReadLine();
@@ -24,4 +20,5 @@ if (number!.Length == 5)
 {
   CheckingNumber(number);
 }
-else Console.WriteLine("Введите правильное число");
+else 
+Console.WriteLine("Введите правильное число");
