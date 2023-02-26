@@ -1,25 +1,25 @@
-﻿// Задача 19
-// Напишите программу, которая принимает на вход пятизначное число и проверяет,
-// является ли оно палиндромом.
-// 14212 -> нет
-// 12821 -> да
+﻿ // Задача 19
+    // Напишите программу, которая принимает на вход пятизначное число и проверяет,
+    // является ли оно палиндромом.
+    // 14212 -> нет
+    // 12821 -> да
 
-
-Console.Write("Введите число: ");
-string number = Console.ReadLine();
-
-void CheckingNumber(string number)
+bool Num(int a);
 {
-  if (number[0]==number[4] || number[1]==number[3])
+  int a;
+  int b = 0;
+  while (a > 0)
   {
-    Console.WriteLine("Ваше число - палиндром.");
+    int o = a % 10;
+    a = a /100;
+    b = b*10 + o;
   }
-  else Console.WriteLine("Ваше число - НЕ палиндром.");
+  bool f = t == b;
+  return f;
 }
 
-if (number!.Length == 5)
-{
-  CheckingNumber(number);
-}
-else 
-Console.WriteLine("Введите правильное число");
+bool m = Num(12345);
+Console.WriteLine(m);
+
+
+   
