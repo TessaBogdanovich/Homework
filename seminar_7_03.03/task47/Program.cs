@@ -5,14 +5,14 @@
 // 1 -3,3 8 -9,9
 // 8 7,8 -7,1 9
 
-double[,] FillMatrix(int rows, int cols)
+double[,] FillMatrix(int rows, int columns)
 {
     Random rand = new Random();
-    double[,] matr = new double[rows, cols];
+    double[,] matr = new double[rows, columns];
 
     for (int i = 0; i < rows; i++)
     {
-        for (int j = 0; j < cols; j++)
+        for (int j = 0; j < columns; j++)
         {
             matr[i, j] = Math.Round(rand.Next(-10, 10) + rand.NextDouble(), 3);
         }
